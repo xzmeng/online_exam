@@ -58,22 +58,22 @@ class Question(models.Model):
     INTEGER = "integer"
 
     QUESTION_TYPES = (
-        (TEXT, _("text (multiple line)")),
-        (SHORT_TEXT, _("short text (one line)")),
-        (RADIO, _("radio")),
-        (SELECT, _("select")),
-        (SELECT_MULTIPLE, _("Select Multiple")),
-        (SELECT_IMAGE, _("Select Image")),
-        (INTEGER, _("integer")),
+        (TEXT, _("多行文本")),
+        (SHORT_TEXT, _("单行文本")),
+        (RADIO, _("选择按钮")),
+        (SELECT, _("选择下拉框")),
+        (SELECT_MULTIPLE, _("多选")),
+        (SELECT_IMAGE, _("图片下拉框")),
+        (INTEGER, _("整数")),
     )
 
-    text = models.TextField(_("Text"))
-    order = models.IntegerField(_("Order"))
-    required = models.BooleanField(_("Required"))
+    text = models.TextField(_("内容"))
+    order = models.IntegerField(_("顺序"))
+    required = models.BooleanField(_("必需"))
     category = models.ForeignKey(
         Category,
         on_delete=models.SET_NULL,
-        verbose_name=_("Category"),
+        verbose_name=_("问题类别"),
         blank=True,
         null=True,
         related_name="questions",
@@ -81,25 +81,25 @@ class Question(models.Model):
     survey = models.ForeignKey(
         Survey,
         on_delete=models.CASCADE,
-        verbose_name=_("Survey"),
+        verbose_name=_("所属试卷"),
         related_name="questions",
     )
     type = models.CharField(
-        _("Type"), max_length=200, choices=QUESTION_TYPES, default=TEXT
+        _("类型"), max_length=200, choices=QUESTION_TYPES, default=TEXT
     )
     choices = models.TextField(
-        _("Choices"), blank=True, null=True, help_text=CHOICES_HELP_TEXT
+        _("选项"), blank=True, null=True, help_text=CHOICES_HELP_TEXT
     )
     answer = models.CharField(
-        _("Answer"), max_length=200, blank=True, null=True
+        _("答案"), max_length=200, blank=True, null=True
     )
     score = models.IntegerField(
-        _("Score"), help_text='The score of the question', default=1
+        _("分值"), help_text='The score of the question', default=1
     )
 
     class Meta(object):
-        verbose_name = _("question")
-        verbose_name_plural = _("questions")
+        verbose_name = _("问题")
+        verbose_name_plural = _("问题")
         ordering = ("survey", "order")
 
     def save(self, *args, **kwargs):

@@ -1,0 +1,21 @@
+{% extends 'survey/base.html' %}
+{% load i18n %}
+
+{% block body %}
+<div id="intro">
+	<h2>成绩报告: {{ response.survey.name }}</h2>
+
+	<ol>
+		{% for answer in answers %}
+		<li>
+            <p>问题:{{ answer.question.text }}</p>
+            <p>您的答案:{{ answer.body }}</p>
+            <p>正确答案:{{ answer.question.answer }}</p>
+            <p>分值:{{ answer.question.score }}</p>
+            <p>得分:{{ answer.score }}</p>
+        </li>
+		{% endfor %}
+	</ol>
+    <p>总分: {{ response.score }}</p>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'survey/base.html' %}
+{% load i18n %}
+
+{% block body %}
+<div id="intro">
+	<h1>{% trans "成绩信息"%}</h1>
+
+	<ul>
+		{% for response in responses %}
+		<li><a href="{{ response.get_absolute_url }}">{% trans "查看成绩:"%} {{ response.survey.name }}</a></li>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

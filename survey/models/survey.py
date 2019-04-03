@@ -7,18 +7,18 @@ from django.utils.translation import ugettext_lazy as _
 
 class Survey(models.Model):
 
-    name = models.CharField(_("Name"), max_length=400)
-    description = models.TextField(_("Description"))
-    is_published = models.BooleanField(_("Users can see it and answer it"))
+    name = models.CharField(_("考试名称"), max_length=400)
+    description = models.TextField(_("试卷描述"))
+    is_published = models.BooleanField(_("是否已经发布"))
     need_logged_user = models.BooleanField(
-        _("Only authenticated users can see it and answer it")
+        _("只有登陆的学生可以回答"), default=True
     )
     display_by_question = models.BooleanField(_("Display by question"))
-    template = models.CharField(_("Template"), max_length=255, null=True, blank=True)
+    template = models.CharField(_("模板"), max_length=255, null=True, blank=True)
 
     class Meta(object):
-        verbose_name = _("survey")
-        verbose_name_plural = _("surveys")
+        verbose_name = _("试卷")
+        verbose_name_plural = _("试卷")
 
     def __str__(self):
         return self.name

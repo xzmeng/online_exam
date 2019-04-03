@@ -23,18 +23,19 @@ class Answer(models.Model):
     question = models.ForeignKey(
         Question,
         on_delete=models.CASCADE,
-        verbose_name=_("Question"),
+        verbose_name=_("问题"),
         related_name="answers",
     )
     response = models.ForeignKey(
         Response,
         on_delete=models.CASCADE,
-        verbose_name=_("Response"),
+        verbose_name=_("提交"),
         related_name="answers",
     )
-    created = models.DateTimeField(_("Creation date"), auto_now_add=True)
-    updated = models.DateTimeField(_("Update date"), auto_now=True)
-    body = models.TextField(_("Content"), blank=True, null=True)
+    created = models.DateTimeField(_("创建日期"), auto_now_add=True)
+    updated = models.DateTimeField(_("更新日期"), auto_now=True)
+    body = models.TextField(_("回答内容"), blank=True, null=True)
+    score = models.IntegerField(_("得分"), blank=True, null=True, default=0)
 
     def __init__(self, *args, **kwargs):
         try:

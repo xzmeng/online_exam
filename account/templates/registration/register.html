@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container" style="width: 400px;">
-    <h2>Register</h2>
+    <h2>在线考试系统</h2>
     <form action="" method="post">
         {% csrf_token %}
 
@@ -10,22 +10,22 @@
             {{ form.username.errors }}
             {{ form.username.label_tag }}
             <input type="text" class="form-control" id="{{ form.username.id_for_label }}"
-                   placeholder="Username" name="{{ form.username.name }}">
+                   placeholder="用户名" name="{{ form.username.name }}">
         </div>
         <div class="form-group">
             {{ form.password.errors }}
             {{ form.password.label_tag }}
             <input type="password" class="form-control" id="{{ form.password.id_for_password }}"
-                   placeholder="Enter password" name="{{ form.password.name }}">
+                   placeholder="输入密码" name="{{ form.password.name }}">
         </div>
         <div class="form-group">
             {{ form.password2.errors }}
             {{ form.password2.label_tag }}
             <input type="password" class="form-control" id="{{ form.password2.id_for_password }}"
-                   placeholder="Enter password" name="{{ form.password2.name }}">
+                   placeholder="再次输入密码" name="{{ form.password2.name }}">
         </div>
-        <input type="hidden" name="next" value="/survey">
-        <button type="submit" class="btn btn-default">Register</button>
+        <button type="submit" class="btn btn-default">注册</button>
+        <a href="{% url 'login' %}">返回登陆</a>
     </form>
 </div>
 {% endblock %}

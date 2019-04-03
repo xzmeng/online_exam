@@ -1,5 +1,5 @@
 {% extends "registration/base.html" %}
 
 {% block content %}
-    <h1>Resigistered! Welcome, {{ new_user.username }}</h1>
+    <h1>注册成功，<a href="{% url 'login' %}">前去登陆</a></h1>
 {% endblock %}

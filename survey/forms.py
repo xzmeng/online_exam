@@ -234,6 +234,7 @@ class ResponseForm(models.ModelForm):
                 answer.body = field_value
                 if answer.body == question.answer:
                     response.score += question.score
+                    answer.score = question.score
                 data["responses"].append((answer.question.id, answer.body))
                 LOGGER.debug(
                     "Creating answer for question %d of type %s : %s",

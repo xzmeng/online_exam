@@ -2,10 +2,11 @@
 
 from django.conf import settings
 from django.shortcuts import get_object_or_404, redirect, render
+from django.urls import reverse
 from django.views.generic import View
 
 from survey.forms import ResponseForm
-from survey.models import Category, Survey
+from survey.models import Category, Survey, Response
 
 
 class SurveyDetail(View):
@@ -30,6 +31,10 @@ class SurveyDetail(View):
 
     def post(self, request, *args, **kwargs):
         survey = get_object_or_404(Survey, is_published=True, id=kwargs["id"])
+        last_response = Response.objects.filter(survey=survey, user=request.user)
+        print(last_response)
+        if last_response:
+            return redirect(reverse('repeat-exam'))
         if survey.need_logged_user and not request.user.is_authenticated:
             return redirect("%s?next=%s" % (settings.LOGIN_URL, request.path))
         categories = Category.objects.filter(survey=survey).order_by("order")
@@ -70,7 +75,7 @@ class SurveyDetail(View):
                         return redirect(next_)
                     else:
                         return redirect(
-                            "survey-confirmation", uuid=response.interview_uuid
+                            "survey-confirmation", uuid=response.interview_uuid,
                         )
         if survey.template is not None and len(survey.template) > 4:
             template_name = survey.template

@@ -3,8 +3,11 @@
 from django.views.generic import TemplateView
 
 from survey.models import Survey
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 
+@method_decorator(login_required, name='dispatch')
 class IndexView(TemplateView):
     template_name = "survey/list.html"
 

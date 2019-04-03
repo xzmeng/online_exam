@@ -4,7 +4,7 @@
 {% block title %} {% trans "Survey completed" %}{% endblock title %}
 
 {% block body %}
-<h1>{% trans "Survey completed" %}</h1>
+<h1>{% trans "试卷已经成功提交！" %}</h1>
 <p> {% trans "Sorry! Your already replied to our survey" %} "{{ survey.name }}". </p>
 <p> <a href="{% url "survey-list" %}">{% trans "Back to survey list" %}</a> </p>
 {% endblock %}

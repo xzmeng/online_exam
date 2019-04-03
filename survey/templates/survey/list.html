@@ -3,11 +3,11 @@
 
 {% block body %}
 <div id="intro">
-	<h1>{% trans "Welcome to the Django Survey app"%}</h1>
+	<h1>{% trans "考试列表"%}</h1>
 
 	<ul>
 		{% for survey in surveys %}
-		<li><a href="{{ survey.get_absolute_url }}">{% trans "Take the Survey"%} {{survey.name}}</a></li>
+		<li><a href="{{ survey.get_absolute_url }}">{{survey.name}}</a></li>
 		{% endfor %}
 	</div>
 </div>

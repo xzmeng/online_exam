@@ -16,10 +16,18 @@
                 <a class="navbar-brand" href="#">在线考试系统</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="{% url 'survey-list' %}">考试列表</a></li>
-                <li><a href="#">成绩信息</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
+                {% url 'survey-list' as survey_list %}
+                {% url 'score-list' as score_list %}
+
+                <li {% if request.get_full_path == survey_list %}class="active"{% endif %}>
+                    <a href="{% url 'survey-list' %}">考试列表</a>
+                </li>
+                <li {% if request.get_full_path == score_list %}class="active"{% endif %}>
+                    <a href="{% url 'score-list' %}">成绩信息</a>
+                </li>
+                <li>
+                    <a href="{% url 'logout' %}">注销</a>
+                </li>
             </ul>
         </div>
     </nav>
