@@ -1,0 +1,31 @@
+{% extends "registration/base.html" %}
+
+{% block content %}
+<div class="container" style="width: 400px;">
+    <h2>Register</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <div class="form-group">
+            {{ form.username.errors }}
+            {{ form.username.label_tag }}
+            <input type="text" class="form-control" id="{{ form.username.id_for_label }}"
+                   placeholder="Username" name="{{ form.username.name }}">
+        </div>
+        <div class="form-group">
+            {{ form.password.errors }}
+            {{ form.password.label_tag }}
+            <input type="password" class="form-control" id="{{ form.password.id_for_password }}"
+                   placeholder="Enter password" name="{{ form.password.name }}">
+        </div>
+        <div class="form-group">
+            {{ form.password2.errors }}
+            {{ form.password2.label_tag }}
+            <input type="password" class="form-control" id="{{ form.password2.id_for_password }}"
+                   placeholder="Enter password" name="{{ form.password2.name }}">
+        </div>
+        <input type="hidden" name="next" value="/survey">
+        <button type="submit" class="btn btn-default">Register</button>
+    </form>
+</div>
+{% endblock %}

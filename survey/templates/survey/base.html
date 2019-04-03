@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="icon" href="{% static 'img/favicon.ico' %}"/>
+    <link href="{% static 'survey/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'survey/css/custom.css' %}"/>
+</head>
+<body>
+<div class="header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">在线考试系统</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="{% url 'survey-list' %}">考试列表</a></li>
+                <li><a href="#">成绩信息</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container" id="wrap">
+    {% block wrapper %} {% endblock %}
+    <div class="well" id="container-main">
+        {% block body %}    {% endblock %}
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        {% block footer %}{% endblock %}
+    </div>
+</div>
+<script type="text/javascript" src="{% static 'survey/js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'survey/js/jquery-ui.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'survey/js/bootstrap.min.js' %}"></script>
+{% block extrajs %}    {% endblock %}
+</body>
+</html>
