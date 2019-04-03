@@ -5,6 +5,7 @@ from django.urls import reverse
 from django.utils.translation import ugettext_lazy as _
 
 
+# 试卷信息
 class Survey(models.Model):
 
     name = models.CharField(_("考试名称"), max_length=400)
@@ -13,7 +14,6 @@ class Survey(models.Model):
     need_logged_user = models.BooleanField(
         _("只有登陆的学生可以回答"), default=True
     )
-    display_by_question = models.BooleanField(_("Display by question"))
     template = models.CharField(_("模板"), max_length=255, null=True, blank=True)
 
     class Meta(object):
@@ -24,9 +24,6 @@ class Survey(models.Model):
         return self.name
 
     def latest_answer_date(self):
-        """ Return the latest answer date.
-
-        Return None is there is no response. """
         min_ = None
         for response in self.responses.all():
             if min_ is None or min_ < response.updated:

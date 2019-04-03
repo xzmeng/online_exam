@@ -2,101 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0d3ffa7-c18c-4ee2-a047-4f071ac15fe9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/survey/templates/survey/repeat_exam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/survey/templates/survey/score_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/survey/templates/survey/score_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/survey/views/score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/registration/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/registration/logged_out.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/registration/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/templates/registration/register_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/account/templates/registration/register_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/使用方法.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_project/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/csv/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/csv/survey2csv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/survey2x.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/configuration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/configuration_builder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/default_conf.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/latex_file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/question2tex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/question2tex_chart.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/question2tex_raw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/question2tex_sankey.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/exporter/tex/survey2tex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/es/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/es/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/fr/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/ja/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/ja/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/ru/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/ru/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/zh/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/locale/zh/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/management/commands/exportresult.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/management/commands/generatetexconf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/management/survey_command.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/models/answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/models/answer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/models/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/models/category.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/models/question.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/models/question.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/models/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/models/response.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/models/survey.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/models/survey.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/templates/survey/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/survey/templates/survey/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/templates/survey/completed.html" beforeDir="false" afterPath="$PROJECT_DIR$/survey/templates/survey/completed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/templates/survey/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/survey/templates/survey/confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/templates/survey/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/survey/templates/survey/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/templates/survey/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/survey/templates/survey/survey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/base_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/csv/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/csv/test_survey2csv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/test_survey2x.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/custom_class_doesnt_exists.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/custom_question2tex_child.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/name_doesnt_exists.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/no_value_defined.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/test_conf.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/test_configuration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/test_configuration_builder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/test_question2tex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/test_question2tex_chart.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/test_question2tex_raw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/test_question2tex_sankey.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/exporter/tex/test_survey2tex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/locale/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/locale/test_locale_normalization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/management/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/management/commands/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/management/commands/test_exportresult.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/management/commands/test_generatetexconf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/management/commands/test_survey_command.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/management/test_management.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/models/base_model_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/models/test_answer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/models/test_category.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/models/test_question.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/models/test_response.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/models/test_survey.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/test_pre_commit_normalization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/test_survey_auth_required.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/testdump.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/views/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/views/test_survey_detail.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/tests/views/test_survey_result.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/runtests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/templatetags/survey_extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/templatetags/survey_extras.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/views/confirm_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/views/confirm_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/views/index_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/views/index_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/views/score.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/views/score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/views/survey_completed.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/views/survey_completed.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey/views/survey_detail.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/views/survey_detail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/survey/views/survey_result.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/widgets.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,78 +31,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5307789">
+    <splitter split-orientation="horizontal" split-proportion="0.618123">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/survey/forms.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3700">
-                  <caret line="195" column="23" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="23" />
+                <state relative-caret-position="101">
+                  <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/survey/apps.py">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/survey/management/commands/setup.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-                  <folding>
-                    <element signature="e#0#27#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/survey/models/survey.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/survey/runtests.py">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/survey/settings.py">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/survey/signals.py">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/survey/models/answer.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/survey/models/category.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="412">
-                  <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+                <state relative-caret-position="60">
+                  <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
@@ -183,8 +59,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/survey/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+                <state relative-caret-position="60">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
                   <folding>
                     <element signature="e#25#57#0" expanded="true" />
                   </folding>
@@ -193,19 +69,49 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/survey/widgets.py">
+            <entry file="file://$PROJECT_DIR$/survey/models/question.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+                <state relative-caret-position="541">
+                  <caret line="395" column="23" selection-start-line="395" selection-start-column="23" selection-end-line="395" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/survey/management/commands/setup.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="140">
+                  <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#0#27#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/使用方法.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/survey/models/category.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="100">
+                  <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/survey/admin.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+                <state relative-caret-position="320">
+                  <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
                   <folding>
                     <element signature="e#25#57#0" expanded="true" />
                   </folding>
@@ -216,8 +122,42 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/survey/actions.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+                <state relative-caret-position="100">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/survey/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="400">
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/survey/models/answer.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="160">
+                  <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/survey/views/survey_detail.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="365">
+                  <caret line="53" selection-start-line="53" selection-end-line="54" />
+                  <folding>
+                    <element signature="e#25#57#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -225,8 +165,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/survey/models/response.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="872">
-                  <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+                <state relative-caret-position="480">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
                   <folding>
                     <element signature="e#26#69#0" expanded="true" />
                   </folding>
@@ -235,26 +175,71 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/survey/models/question.py">
+            <entry file="file://$PROJECT_DIR$/survey/views/index_view.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-5608">
-                  <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+                <state relative-caret-position="160">
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
+                  <folding>
+                    <element signature="e#25#70#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/survey/models/survey.py">
+            <entry file="file://$PROJECT_DIR$/survey/views/survey_completed.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+                <state relative-caret-position="300">
+                  <caret line="18" selection-start-line="18" selection-end-line="18" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/account/models.py">
+            <entry file="file://$PROJECT_DIR$/survey/views/score.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="160">
+                  <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#0#57#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/survey/views/__init__.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="100">
+                  <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+                  <folding>
+                    <element signature="e#25#74#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/survey/templatetags/survey_extras.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="480">
+                  <caret line="30" selection-start-line="30" selection-end-line="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/survey/templatetags/__init__.py">
               <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/survey/views/confirm_view.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="100">
+                  <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -269,6 +254,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>step</find>
+      <find>display</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -277,11 +268,8 @@
       <list>
         <option value="$PROJECT_DIR$/survey/views/score_list.py" />
         <option value="$PROJECT_DIR$/survey/views/__init__.py" />
-        <option value="$PROJECT_DIR$/survey/forms.py" />
-        <option value="$PROJECT_DIR$/survey/views/score.py" />
         <option value="$PROJECT_DIR$/account/urls.py" />
         <option value="$PROJECT_DIR$/example_project/urls.py" />
-        <option value="$PROJECT_DIR$/survey/views/index_view.py" />
         <option value="$PROJECT_DIR$/account/templates/registration/logged_out.html" />
         <option value="$PROJECT_DIR$/account/templates/registration/base.html" />
         <option value="$PROJECT_DIR$/account/templates/registration/login.html" />
@@ -291,23 +279,31 @@
         <option value="$PROJECT_DIR$/survey/templates/survey/survey.html" />
         <option value="$PROJECT_DIR$/survey/templates/survey/score_detail.html" />
         <option value="$PROJECT_DIR$/survey/templates/survey/completed.html" />
-        <option value="$PROJECT_DIR$/survey/views/confirm_view.py" />
         <option value="$PROJECT_DIR$/survey/templates/survey/confirm.html" />
         <option value="$PROJECT_DIR$/survey/templates/survey/score_list.html" />
         <option value="$PROJECT_DIR$/survey/templates/survey/base.html" />
         <option value="$PROJECT_DIR$/survey/templates/survey/forms/repeat_exam.html" />
-        <option value="$PROJECT_DIR$/survey/views/survey_detail.py" />
         <option value="$PROJECT_DIR$/survey/templates/survey/repeat_exam.html" />
-        <option value="$PROJECT_DIR$/survey/models/question.py" />
-        <option value="$PROJECT_DIR$/survey/models/category.py" />
-        <option value="$PROJECT_DIR$/survey/models/answer.py" />
-        <option value="$PROJECT_DIR$/survey/urls.py" />
-        <option value="$PROJECT_DIR$/survey/admin.py" />
-        <option value="$PROJECT_DIR$/survey/models/survey.py" />
-        <option value="$PROJECT_DIR$/survey/models/response.py" />
-        <option value="$PROJECT_DIR$/survey/actions.py" />
         <option value="$PROJECT_DIR$/survey/management/commands/generatetexconf.py" />
         <option value="$PROJECT_DIR$/survey/management/commands/setup.py" />
+        <option value="$PROJECT_DIR$/survey/views/index_view.py" />
+        <option value="$PROJECT_DIR$/survey/views/score.py" />
+        <option value="$PROJECT_DIR$/survey/views/confirm_view.py" />
+        <option value="$PROJECT_DIR$/survey/views/survey_completed.py" />
+        <option value="$PROJECT_DIR$/survey/apps.py" />
+        <option value="$PROJECT_DIR$/survey/views/survey_detail.py" />
+        <option value="$PROJECT_DIR$/survey/templatetags/survey_extras.py" />
+        <option value="$PROJECT_DIR$/survey/models/response.py" />
+        <option value="$PROJECT_DIR$/survey/models/survey.py" />
+        <option value="$PROJECT_DIR$/survey/admin.py" />
+        <option value="$PROJECT_DIR$/survey/actions.py" />
+        <option value="$PROJECT_DIR$/survey/settings.py" />
+        <option value="$PROJECT_DIR$/survey/urls.py" />
+        <option value="$PROJECT_DIR$/survey/models/answer.py" />
+        <option value="$PROJECT_DIR$/survey/models/category.py" />
+        <option value="$PROJECT_DIR$/survey/models/question.py" />
+        <option value="$PROJECT_DIR$/survey/forms.py" />
+        <option value="$PROJECT_DIR$/使用方法.txt" />
       </list>
     </option>
   </component>
@@ -333,6 +329,11 @@
               <item name="example_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="example_project" type="462c0819:PsiDirectoryNode" />
               <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="example_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example_project" type="462c0819:PsiDirectoryNode" />
+              <item name="example_project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="example_project" type="b2602c69:ProjectViewProjectNode" />
@@ -404,27 +405,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554275639577</updated>
-      <workItem from="1554275641017" duration="10310000" />
+      <workItem from="1554275641017" duration="16405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10310000" />
+    <option name="totallyTimeSpent" value="16405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="20" width="1936" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.20092379" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.2078522" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.43533486" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -458,33 +460,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/account/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/account/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/account/templates/registration/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/account/templates/registration/register_done.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -512,30 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/survey/views/survey_completed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/views/index_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="e#25#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/views/confirm_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/survey/templates/survey/list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -547,16 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
           <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-          <folding>
-            <element signature="e#25#74#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -601,9 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/survey/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/survey/tests/locale/test_locale_normalization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -643,126 +581,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/survey/views/survey_detail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="e#25#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/views/score.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/account/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/survey/models/question.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5608">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/models/category.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/models/answer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/survey/views/survey_result.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/templatetags/survey_extras.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/models/response.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-          <folding>
-            <element signature="e#26#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/models/survey.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/signals.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/settings.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/runtests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="84" lean-forward="true" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
-          <folding>
-            <element signature="e#25#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3700">
-          <caret line="195" column="23" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/survey/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding>
-            <element signature="e#25#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/survey/management/commands/exportresult.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -777,16 +600,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/survey/apps.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/views/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <folding>
+            <element signature="e#25#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/templatetags/survey_extras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/templatetags/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/models/survey.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/models/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#26#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/runtests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/signals.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#25#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#25#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/views/confirm_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/views/index_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#25#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/views/score.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/views/survey_completed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/views/survey_detail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="53" selection-start-line="53" selection-end-line="54" />
+          <folding>
+            <element signature="e#25#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/models/answer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/models/category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/models/question.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="395" column="23" selection-start-line="395" selection-start-column="23" selection-end-line="395" selection-end-column="23" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/survey/management/commands/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/使用方法.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
         </state>
       </provider>
     </entry>

@@ -6,6 +6,7 @@ from django.views.generic import TemplateView
 from survey.models import Survey
 
 
+#
 class SurveyCompleted(TemplateView):
 
     template_name = "survey/completed.html"

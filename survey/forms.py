@@ -10,20 +10,21 @@ from django.utils.text import slugify
 
 from survey.models import Answer, Question, Response
 from survey.signals import survey_completed
-from survey.widgets import ImageSelectWidget
 
 LOGGER = logging.getLogger(__name__)
 
 
+# 该表单渲染试卷页面，并且通过它保存学生提交的答案/成绩
 class ResponseForm(models.ModelForm):
 
+    # 使用不同的html组件来渲染试卷
     WIDGETS = {
-        Question.TEXT: forms.Textarea,
-        Question.SHORT_TEXT: forms.TextInput,
+        # Question.TEXT: forms.Textarea,
+        # Question.SHORT_TEXT: forms.TextInput,
         Question.RADIO: forms.RadioSelect,
         Question.SELECT: forms.Select,
-        Question.SELECT_IMAGE: ImageSelectWidget,
-        Question.SELECT_MULTIPLE: forms.CheckboxSelectMultiple,
+        # Question.SELECT_IMAGE: ImageSelectWidget,
+        # Question.SELECT_MULTIPLE: forms.CheckboxSelectMultiple,
     }
 
     class Meta(object):
@@ -31,31 +32,22 @@ class ResponseForm(models.ModelForm):
         fields = ()
 
     def __init__(self, *args, **kwargs):
-        """ Expects a survey object to be passed in initially """
+        # 获取试卷信息和学生信息
         self.survey = kwargs.pop("survey")
         self.user = kwargs.pop("user")
-        try:
-            self.step = int(kwargs.pop("step"))
-        except KeyError:
-            self.step = None
+
         super(ResponseForm, self).__init__(*args, **kwargs)
+        # 生成同一学生同一试卷的唯一标识符
         self.uuid = uuid.uuid4().hex
-        self.steps_count = len(self.survey.questions.all())
-        # add a field for each survey question, corresponding to the question
-        # type as appropriate.
+
+        # 将关联到改试卷的所有问题动态添加到试卷表单中
         data = kwargs.get("data")
-        for i, question in enumerate(self.survey.questions.all()):
-            is_current_step = i != self.step and self.step is not None
-            if self.survey.display_by_question and is_current_step:
-                continue
-            else:
-                self.add_question(question, data)
+        for question in self.survey.questions.all():
+            self.add_question(question, data)
 
     def _get_preexisting_response(self):
-        """ Recover a pre-existing response in database.
-
-        The user must be logged.
-        :rtype: Response or None"""
+        # 查看同一学生是否之前提交过该试卷
+        # 如果有则返回，没有或者学生未登陆则返回None
         if not self.user.is_authenticated:
             return None
         try:
@@ -67,13 +59,7 @@ class ResponseForm(models.ModelForm):
             return None
 
     def _get_preexisting_answer(self, question):
-        """ Recover a pre-existing answer in database.
-
-        The user must be logged. A Response containing the Answer must exists.
-
-        :param Question question: The question we want to recover in the
-        response.
-        :rtype: Answer or None"""
+        # 获取该学生之前回答过的信息
         response = self._get_preexisting_response()
         if response is None:
             return None
@@ -114,36 +100,25 @@ class ResponseForm(models.ModelForm):
         return initial
 
     def get_question_widget(self, question):
-        """ Return the widget we should use for a question.
-
-        :param Question question: The question
-        :rtype: django.forms.widget or None """
+        # 获取问题需要的html组件
         try:
             return self.WIDGETS[question.type]
         except KeyError:
             return None
 
     def get_question_choices(self, question):
-        """ Return the choices we should use for a question.
-
-        :param Question question: The question
-        :rtype: List of String or None """
+        # 获得所有问题选项
         qchoices = None
         if question.type not in [Question.TEXT, Question.SHORT_TEXT, Question.INTEGER]:
+            # 如果使用多选按钮：
             qchoices = question.get_choices()
-            # add an empty option at the top so that the user has to explicitly
-            # select one of the options
+            # 如果使用多选下拉框：
             if question.type in [Question.SELECT, Question.SELECT_IMAGE]:
                 qchoices = tuple([("", "-------------")]) + qchoices
         return qchoices
 
     def get_question_field(self, question, **kwargs):
-        """ Return the field we should use in our form.
-
-        :param Question question: The question
-        :param **kwargs: A dict of parameter properly initialized in
-            add_question.
-        :rtype: django.forms.fields """
+        # 在表单上动态生成每个问题的选项/回答输入框
         FIELDS = {
             Question.TEXT: forms.CharField,
             Question.SHORT_TEXT: forms.CharField,
@@ -156,12 +131,10 @@ class ResponseForm(models.ModelForm):
         except KeyError:
             return forms.ChoiceField(**kwargs)
 
+    # 添加问题
     def add_question(self, question, data):
-        """ Add a question to the form.
-
-        :param Question question: The question to add.
-        :param dict data: The pre-existing values from a post request. """
         kwargs = {"label": question.text, "required": question.required}
+        # 用来初始化问题的内容
         initial = self.get_question_initial(question, data)
         if initial:
             kwargs["initial"] = initial
@@ -179,32 +152,9 @@ class ResponseForm(models.ModelForm):
         # logging.debug("Field for %s : %s", question, field.__dict__)
         self.fields["question_%d" % question.pk] = field
 
-    def has_next_step(self):
-        if self.survey.display_by_question:
-            if self.step < self.steps_count - 1:
-                return True
-        return False
-
-    def next_step_url(self):
-        if self.has_next_step():
-            context = {"id": self.survey.id, "step": self.step + 1}
-            return reverse("survey-detail-step", kwargs=context)
-        else:
-            return None
-
-    def current_step_url(self):
-        return reverse(
-            "survey-detail-step", kwargs={"id": self.survey.id, "step": self.step}
-        )
-
+    # 保存提交表单到数据库，并计算成绩
     def save(self, commit=True):
-        """ Save the response object """
-        # Recover an existing response from the database if any
-        #  There is only one response by logged user.
-        response = self._get_preexisting_response()
-        if response is None:
-            response = super(ResponseForm, self).save(commit=False)
-
+        response = super(ResponseForm, self).save(commit=False)
         response.survey = self.survey
         response.interview_uuid = self.uuid
         if self.user.is_authenticated:
@@ -216,21 +166,14 @@ class ResponseForm(models.ModelForm):
             "interview_uuid": response.interview_uuid,
             "responses": [],
         }
-        # create an answer object for each question and associate it with this
-        # response.
+        # 对学生提交中的每个问题答案都将其保存到数据库中，并且关联到本次提交
         for field_name, field_value in list(self.cleaned_data.items()):
             if field_name.startswith("question_"):
-                # warning: this way of extracting the id is very fragile and
-                # entirely dependent on the way the question_id is encoded in
-                # the field name in the __init__ method of this form class.
                 q_id = int(field_name.split("_")[1])
                 question = Question.objects.get(pk=q_id)
                 answer = self._get_preexisting_answer(question)
                 if answer is None:
                     answer = Answer(question=question)
-                if question.type == Question.SELECT_IMAGE:
-                    value, img_src = field_value.split(":", 1)
-                    # TODO
                 answer.body = field_value
                 if answer.body == question.answer:
                     response.score += question.score

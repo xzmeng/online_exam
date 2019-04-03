@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-    These type-specific answer models use a text field to allow for flexible
-    field sizes depending on the actual question this answer corresponds to any
-    "required" attribute will be enforced by the form.
-"""
 
 import logging
 
@@ -18,6 +13,7 @@ from .response import Response
 LOGGER = logging.getLogger(__name__)
 
 
+# 保存学生提交答案（一个问题的）
 class Answer(models.Model):
 
     question = models.ForeignKey(

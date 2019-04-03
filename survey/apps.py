@@ -1,12 +1,9 @@
 from django.apps import AppConfig
 
 
+# app的单独配置
 class DjangoSurveyAndReportConfig(AppConfig):
-
-    """
-    See https://docs.djangoproject.com/en/2.1/ref/applications/#django.apps.AppConfig
-    """
 
     name = "survey"
     label = "survey"
-    verbose_name = "Survey and report"
+    verbose_name = "online_exam"

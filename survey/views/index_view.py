@@ -7,10 +7,12 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
 
-@method_decorator(login_required, name='dispatch')
+# 考试列表
+@method_decorator(login_required, name='dispatch')  # 登陆才允许访问
 class IndexView(TemplateView):
     template_name = "survey/list.html"
 
+    # 用来渲染模板的上下文： surveys是所有试卷的集合(标记为可见/发布的)
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
         surveys = Survey.objects.filter(is_published=True)

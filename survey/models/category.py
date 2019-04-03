@@ -7,6 +7,9 @@ from django.utils.translation import ugettext_lazy as _
 from .survey import Survey
 
 
+# 问题种类
+
+
 class Category(models.Model):
 
     name = models.CharField(_("种类名称"), max_length=400)

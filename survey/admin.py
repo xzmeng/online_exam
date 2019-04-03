@@ -9,10 +9,12 @@ from survey.models import Answer, Category, Question, Response, Survey
 from .actions import make_published, make_finished
 
 
+# django的后台管理页面，用户教师登陆，管理试卷，查看成绩
+
 class QuestionInline(admin.TabularInline):
     model = Question
     ordering = ("order", "category")
-    extra = 1
+    extra = 0
 
     formfield_overrides = {
         models.TextField: {'widget': forms.Textarea(attrs={'rows': 4, 'cols': 20})}

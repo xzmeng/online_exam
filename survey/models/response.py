@@ -7,6 +7,8 @@ from django.utils.translation import ugettext_lazy as _
 
 from .survey import Survey
 
+
+# 默认使用Django自带的验证系统
 try:
     from django.conf import settings
 
@@ -18,12 +20,8 @@ except (ImportError, AttributeError):
     user_model = User
 
 
+# 试卷提交信息
 class Response(models.Model):
-
-    """
-        A Response object is a collection of questions and answers with a
-        unique interview uuid.
-    """
 
     created = models.DateTimeField(_("提交时间"), auto_now_add=True)
     updated = models.DateTimeField(_("更新时间"), auto_now=True)

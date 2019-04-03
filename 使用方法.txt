@@ -1,0 +1,42 @@
+(windows 10)
+
+0. 确保安装python3.6/3.7
+
+1. 打开cmd将目录切换到代码的根目录(Pycharm直接代开项目使用Terminal)
+
+2. $ pip install -i https://pypi.douban.com/simple -r requirements.txt
+
+3. $ python manage.py migrate
+
+4. $ python manage.py runserver
+
+5. 访问 http://localhost:8000
+
+
+简介:
+
+创建一个Django项目会自动生成下面结构
+example_project
+|-example_project
+  |-__init__.py
+  |-settings.py # 项目包含什么app,使用什么数据库后端,各种静态文件存在哪里等
+  |-urls.py # url怎么映射,一般不会直接映射具体视图,而是间接包含
+  |-wsgi.py # wsgi实现默认使用django自带的,不会用到
+|-manage.py # python manage.py <command-name>
+其中example_project子目录中保存着该项目的配置信息, manage.py用来进行各种命令行操作
+项目的实际功能是通过添加app来实现的,一个app可以看作一个可以复用的模块
+一个app具有以下结构
+account
+|-templates    # 保存html模板
+|-__init__.py
+|-admin.py   # 定制根据models定制后台管理页面
+|-apps.py    # 保存app的具体配置,不会用到
+|-forms.py   # 保存表单信息
+|-models.py  # 保存数据库对象信息
+|-tests.py   # 测试,不会用到
+|-urls.py    # url映射
+|-views.py   # 保存视图函数,实现大部分的页面逻辑
+
+在本项目中有两个app
+account:实现学生注册和登陆
+survey:实现试卷系统

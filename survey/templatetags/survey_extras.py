@@ -6,8 +6,7 @@ register = template.Library()
 
 
 def collapse_form(form, category):
-    """ Permit to return the class of the collapsible according to errors in
-    the form. """
+    # 用于在前端呈现出可以展开/收起的问题种类列表
     categories_with_error = set()
     for field in form:
         if field.errors:
@@ -20,6 +19,7 @@ def collapse_form(form, category):
 register.filter("collapse_form", collapse_form)
 
 
+# 计算有多少个问题
 class CounterNode(template.Node):
     def __init__(self):
         self.count = 0

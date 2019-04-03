@@ -3,6 +3,8 @@
 from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import ungettext
 
+# 发布考试和结束考试
+
 
 def make_published(modeladmin, request, queryset):
     """
